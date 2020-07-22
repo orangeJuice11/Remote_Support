@@ -3,6 +3,7 @@ import requests
 import json
 import urllib3
 def get_auth_token():
+    """enter secret + BASE64Encode+ pass token """
     global url1
     https = "https://"
     url1 = input('Enter Bomgar FQDN:\n')
@@ -22,7 +23,11 @@ def get_auth_token():
         format = json_data['access_token']
 get_auth_token()
 def create_user():
-    url = "https://pauldd.beyondtrustcloud.com/api/config/v1/user"
+    """ Create user"""
+    global url1
+    https = "https://"
+    url2 = ".beyondtrustcloud.com/api/config/v1/user"
+    url = https + url1 + url2
     username=input('username\n')
     id=input('ID#\n')
     public_display_name=input('public_Display_Name\n')
