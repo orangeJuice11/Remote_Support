@@ -1,6 +1,6 @@
 
 
-# API PYTHON SCRIPT TO CREATE USERS IN Remote_Support
+# API PYTHON SCRIPT TO USE Beyond TRust API for Remote_Support & Priviledge Remote Access
 
 A simple Python Script to Call API for Beyond Trust Remote Support & PRA
 
